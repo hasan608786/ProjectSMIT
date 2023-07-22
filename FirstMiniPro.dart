@@ -107,12 +107,14 @@ class StudentTracker {
   }
 
   void showTotalStudent() {
+    int count = 0;
     if (student.isEmpty) {
       print('Total Student: 0');
     } else {
-      for (var i = 1; i < student.length; i++) {
-        print('Total Student: $i');
+      for (var i = 0; i < student.length; i++) {
+        count++;
       }
+      print('Total Student of : ${count}');
     }
   }
 }
